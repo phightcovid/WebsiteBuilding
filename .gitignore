@@ -1,0 +1,4 @@
+#Mac OS Files to ignore
+
+#.ds_store
+*.DS_Store
