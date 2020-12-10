@@ -1,0 +1,4 @@
+#Mac OS Files to Ignore in phightcovid_website
+
+#.ds_store
+*.DS_Store
