@@ -38,7 +38,7 @@ header{
     width: 30%;
     float: left;
     padding: 10px 0px;
-    filter: brightness(1.0) opacity(0.75) drop-shadow(0 0 0 blue);
+    filter: brightness(1.0) opacity(0.75);
 
 
 }    
