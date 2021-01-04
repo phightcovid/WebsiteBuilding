@@ -1,0 +1,528 @@
+Sublime with HTML, CSS and JS for webpage building
+
+///////**************/////////
+//Header Style 1: (Has logo)//
+//////***************////////
+
+HTML:
+ <!-- Site navigation menu -->
+
+<!-- Top header menu containing
+         logo and Navigation bar -->
+   	   <div id="top-header">
+
+   	   <!-- <div id="top-header-text"> 
+             <h1> PHIGHT COVID</h1>
+         </div> -->
+
+        <!-- Logo -->
+        <div id="logo">
+            <img src="img/PittLogo.jpg" />
+        </div>    
+      	    
+
+        <!-- Navigation Menu -->
+        <nav>
+        
+          <div id="menu">
+            <ul>
+                <li class="active"> </li> <!-- removed <a element so that Maps page is not an option --> 
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Maps.html">Maps</a></li>
+                <!-- <li><a href="#">Our Story</a></li> --> 
+                <li><a href="ContactUs.html">Contact Us</a></li>
+            </ul>
+          </div> 
+        </nav>
+      </div>    
+ 
+    <!-- Image menu in Header to contain an Image and 
+         a sample text over that image -->
+      <div id="top-header-image-menu">
+ 
+      </div>
+
+  </header>
+
+
+  CSS: 
+
+  /*************************/
+/*    Styling  Header    */
+/*************************/
+header{
+     
+    overflow: hidden;
+    background: #FFF; 
+  color: #ffffff;
+  /* font:400 .9em/1.9 'Open Sans', Calibri, Helvetica, Arial, sans-serif; */
+}
+ 
+#top-header {
+         
+    text-align: center;
+    height: 60px;
+    overflow: hidden;
+    background-color: #000
+    font-weight: 500;
+    padding: 20px 10px;
+}
+
+ 
+/****************/   
+/* Styling Logo */
+/****************/
+#logo{
+    float: left;
+    padding: none;
+    margin: none;
+    height: 60px;
+    width: 30%;
+}
+ 
+#logo img{
+    width: 30%;
+    float: left;
+    padding: 10px 0px;
+    filter: brightness(1.0) opacity(0.75);
+
+
+}    
+ 
+/***************************/
+/* Styling Navigation Menu */
+/***************************/
+#menu{
+    float: right;
+    width: 70%;
+    height: 100%;
+    margin: none;
+}
+     
+#menu ul{
+    text-align: center;
+    float: right;
+    margin: none;
+    background: #FFF;
+}
+     
+#menu li{
+    display: inline-block;
+    padding: none;
+    margin: none;
+}
+     
+#menu li a, #menu li span{
+    display: inline-block;
+    padding: 0em 1.5em;
+    text-decoration: none;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 60px;
+}
+     
+#menu li a{
+         
+    color: #000;
+}
+     
+#menu li:hover a, #menu li span{
+     
+    text-decoration: underline;
+    color: #f59052;
+
+}
+
+/************** END of header styling */
+
+Javascript: 
+/***** Beginning of 1st dropdown button javascript *********/
+
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+} 
+/******** End of 1st dropdown button javascript ********/ 
+
+END OF HEADER STYLE 1 (HAS LOGO)
+
+///////**************/////////
+////Dropdown button Style 1:/ 
+/////***************/////////
+
+HTML: 
+<!-- Start: Dropdown button 
+
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="Maps.html">Maps Page</a>
+    <a href="Link2">Link2</a>
+    <a href="Link3">Link3</a>
+  </div>
+</div> 
+
+ End: Dropdown button --> 
+
+ CSS: -
+
+
+ JS: 
+
+ /***** Beginning of 1st dropdown button javascript *********/
+
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+} 
+/******** End of 1st dropdown button javascript ********/ 
+
+///////**************/////////
+////Dropdown button Style 2: Clickable Dropdown. Items link to html. Caveat: button is old school looking Pro: JS write in the html./ 
+/////***************/////////
+
+HTML: 
+
+<!-- Start: 2nd cliackable Dropdown button 
+
+<form name="change">
+<SELECT NAME="options" ONCHANGE="document.getElementById('youriframe').src = this.options[this.selectedIndex].value">
+<option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/ALABAMA_interactive.html"> Choose a state </option> 
+<option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/ALABAMA_interactive.html">Alabama</option>
+<option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/ALASKA_interactive.html">Alaska</option>
+<option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/ARIZONA_interactive.html">Arizona</option>
+<option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/ARKANSAS_interactive.html">Arkansas</option>
+<option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/CALIFORNIA_interactive.html">California</option>
+<option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/COLORADO_interactive.html">Colorado</option>
+<option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/CONNECTICUT_interactive.html">Connecticut</option>
+<option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/DC_interactive.html">District of Columbia</option>
+<option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/DELAWARE_interactive.html">Delaware</option>
+<option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/FLORIDA_interactive.html">Florida</option>
+<option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/GEORGIA_interactive.html">Georgia</option>
+<option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/HAWAII_interactive.html">Hawaii</option>
+<option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/IDAHO_interactive.html">Idaho</option>
+<option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/ILLINOIS_interactive.html">Illinois</option>
+<option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/INDIANA_interactive.html">Indiana</option>
+<option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/IOWA_interactive.html">Iowa</option>
+<option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/KANSAS_interactive.html">Kansas</option>
+<option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/KENTUCKY_interactive.html">Kentucku</option>
+<option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/LOUISIANA_interactive.html">Louisiana</option>
+<option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/MAINE_interactive.html">Maine</option>
+<option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/MARYLAND_interactive.html">Maryland</option>
+<option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/MASSACHUSETTS_interactive.html">Massachusetts</option>
+<option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/MICHIGAN_interactive.html">Michigan</option>
+<option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/MINNESOTA_interactive.html">Minnesota</option>
+<option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/MISSISSIPPI_interactive.html">Mississippi</option>
+<option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/MISSOURI_interactive.html">Missouri</option>
+<option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/MONTANA_interactive.html">Montana</option>
+<option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/NEBRASKA_interactive.html">Nebraska</option>
+<option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/NEVADA_interactive.html">Nevada</option>
+<option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/NEWJERSEY_interactive.html">New Jersey</option>
+<option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/NEWMEXICO_interactive.html">New Mexico</option>
+<option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/NEWYORK_interactive.html">New York</option>
+<option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/NORTHCAROLINA_interactive.html">North Carolina</option>
+<option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/NORTHDAKOTA_interactive.html">North Dakota</option>
+<option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/OHIO_interactive.html">Ohio</option>
+<option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/OKLAHOMA_interactive.html">Oklahoma</option>
+<option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/OREGON_interactive.html">Oregon</option>
+<option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/PENNSYLVANIA_interactive.html">Pennsylvania</option>
+<option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/RHODEISLAND_interactive.html">Rhode Island</option>
+<option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/SOUTHCAROLINA_interactive.html">South Carolina</option>
+<option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/SOUTHDAKOTA_interactive.html">South Dakota</option>
+<option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/TENNESSEE_interactive.html">Tennessee</option>
+<option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/TEXAS_interactive.html">Texas</option>
+<option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/UTAH_interactive.html">Utah</option>
+<option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/VIRGINIA_interactive.html">Virginia</option>
+<option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/WASHINGTON_interactive.html">Washington</option>
+<option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/WESTVIRGINIA_interactive.html">West Virginia</option>
+<option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/WISCONSIN_interactive.html">Wisconsin</option>
+<option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/WYOMING_interactive.html">Wyoming</option>
+
+</SELECT>
+
+<iframe name="iframe" id="youriframe" src="https://phightcovid.org/PHIGHTCOVID_state_tmseries/ALABAMA_interactive.html" frameborder="0" scrolling="yes" width="100%" height="800px" ></iframe>
+
+ End: 2nd clickable Dropdown button -->  
+
+ CSS: 
+
+ /******* Beginning of 2 clickable dropdown button CSS********/
+
+ /* Dropdown Button */
+.dropbtn {
+  background-color: #34495e;
+  color: #34495e;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #34495e;
+}
+
+
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;} 
+
+/****** End of 2 clickable dropdown button CSS ******/
+
+ JS: 
+ /******** Start: 2nd clickable dropdown button javascript * note: this is an associated addition/alternative to the javascript already in the html above (ONCHANGE). Won't necessarily use it, not sure how well this js works with the html ********/
+
+
+        function setIframeSource() {
+            // behavior of myIframe
+            var theSelect = document.getElementById('location');
+            var theIframe = document.getElementById('myIframe');
+            var theUrl;
+            theUrl = theSelect.options[theSelect.selectedIndex].value;
+            theIframe.src = theUrl;
+
+            // behavior of myIframe2
+            var theSelect2 = document.getElementById('location');
+            var theIframe2 = document.getElementById('myIframe2');
+            var theUrl2;
+            theUrl2 = theSelect2.options[theSelect2.selectedIndex].value;
+            theIframe2.src = theUrl2;
+
+            // behavior of myIframe3
+            var theSelect3 = document.getElementById('location');
+            var theIframe3 = document.getElementById('myIframe3');
+            var theUrl3;
+            theUrl3 = theSelect3.options[theSelect3.selectedIndex].value;
+            theIframe3.src = theUrl3;
+        }
+   
+/******** End: 2nd clickable dropdown button javascript ********/ 
+
+///////**************/////////
+////Dropdown button Style 3: Clickable Dropdown. Items link to html. Pro: JS writen in the html and in seperate doc (can use either) also Button is pretty looking./ 
+/////***************/////////
+
+HTML: 
+<!-- START: 3rd clickable dropdown button html--> 
+
+<form name="change">
+ 
+
+  <div class="custom-select">
+    <label for="select-choice1" class="label select-1"><span class="selection-choice">Choose a state</span> </label>
+    <select id="select-choice1" class="select" ONCHANGE="document.getElementById('youriframe').src = this.options[this.selectedIndex].value">
+      <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/ALABAMA_interactive.html">Alabama</option>
+      <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/ALASKA_interactive.html">Alaska</option>
+      <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/ARIZONA_interactive.html">Arizona</option>
+      <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/ARKANSAS_interactive.html">Arkansas</option>
+      <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/CALIFORNIA_interactive.html">California</option>
+      <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/COLORADO_interactive.html">Colorado</option>
+      <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/CONNECTICUT_interactive.html">Connecticut</option>
+      <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/DC_interactive.html">District of Columbia</option>
+      <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/DELAWARE_interactive.html">Delaware</option>
+      <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/FLORIDA_interactive.html">Florida</option>
+      <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/GEORGIA_interactive.html">Georgia</option>
+      <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/HAWAII_interactive.html">Hawaii</option>
+      <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/IDAHO_interactive.html">Idaho</option>
+      <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/ILLINOIS_interactive.html">Illinois</option>
+      <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/INDIANA_interactive.html">Indiana</option>
+      <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/IOWA_interactive.html">Iowa</option>
+      <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/KANSAS_interactive.html">Kansas</option>
+      <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/KENTUCKY_interactive.html">Kentucku</option>
+      <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/LOUISIANA_interactive.html">Louisiana</option>
+      <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/MAINE_interactive.html">Maine</option>
+      <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/MARYLAND_interactive.html">Maryland</option>
+      <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/MASSACHUSETTS_interactive.html">Massachusetts</option>
+      <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/MICHIGAN_interactive.html">Michigan</option>
+      <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/MINNESOTA_interactive.html">Minnesota</option>
+      <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/MISSISSIPPI_interactive.html">Mississippi</option>
+      <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/MISSOURI_interactive.html">Missouri</option>
+      <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/MONTANA_interactive.html">Montana</option>
+      <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/NEBRASKA_interactive.html">Nebraska</option>
+      <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/NEVADA_interactive.html">Nevada</option>
+      <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/NEWJERSEY_interactive.html">New Jersey</option>
+      <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/NEWMEXICO_interactive.html">New Mexico</option>
+      <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/NEWYORK_interactive.html">New York</option>
+      <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/NORTHCAROLINA_interactive.html">North Carolina</option>
+      <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/NORTHDAKOTA_interactive.html">North Dakota</option>
+      <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/OHIO_interactive.html">Ohio</option>
+      <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/OKLAHOMA_interactive.html">Oklahoma</option>
+      <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/OREGON_interactive.html">Oregon</option>
+      <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/PENNSYLVANIA_interactive.html">Pennsylvania</option>
+      <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/RHODEISLAND_interactive.html">Rhode Island</option>
+      <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/SOUTHCAROLINA_interactive.html">South Carolina</option>
+      <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/SOUTHDAKOTA_interactive.html">South Dakota</option>
+      <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/TENNESSEE_interactive.html">Tennessee</option>
+      <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/TEXAS_interactive.html">Texas</option>
+      <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/UTAH_interactive.html">Utah</option>
+      <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/VIRGINIA_interactive.html">Virginia</option>
+      <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/WASHINGTON_interactive.html">Washington</option>
+      <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/WESTVIRGINIA_interactive.html">West Virginia</option>
+      <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/WISCONSIN_interactive.html">Wisconsin</option>
+      <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries/WYOMING_interactive.html">Wyoming</option>
+    </select>
+
+    <iframe name="iframe" id="youriframe" src="https://phightcovid.org/PHIGHTCOVID_state_tmseries/ALABAMA_interactive.html" frameborder="0" scrolling="yes" width="100%" height="800px" ></iframe>
+
+  </div>
+</form> 
+
+<!-- END: 3rd clickable dropdown button html--> 
+
+CSS: 
+/* START: 3rd clickable dropdown button CSS */ 
+
+@import "compass/css3";
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600);
+
+ /* body {
+ background: #1c5570; 
+  color: #ffffff;
+  font:400 .9em/1.9 'Open Sans', Calibri, Helvetica, Arial, sans-serif; 
+  } */ 
+
+.custom-select {
+  position : relative;
+  width: 100%;
+  max-width:  25em;
+  margin: 4em auto;
+  cursor: pointer;
+}
+.select,
+.label{
+  display: block;
+}
+.select {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  padding: 1em;
+  height: 4em;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  background: none transparent;
+  border: 0 none;
+}
+.label {
+  position:  relative;
+  padding: 1em;
+  border-radius: .5em;
+  cursor: pointer;
+}
+.label::after {
+  content: "▼";
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 1em;
+  border-left: 1px solid;
+}
+.open .label::after {
+   content: "▲";
+}
+.select-1 {
+   background: #21cf8f;
+   color: #fff;
+  border-bottom: .25em solid darken(#21cf8f, 10);
+  &:after {
+     border-color: darken(#21cf8f, 10);
+  }
+
+/* END: 3rd clickable dropdown button CSS */ 
+
+JS: 
+
+/* START: 3rd clickable dropdown button javascript  
+
+$("select").on("click" , function() {
+  
+  $(this).parent(".custom-select").toggleClass("open");
+  
+});
+
+$(document).mouseup(function (e)
+{
+    var container = $(".custom-select");
+
+    if (container.has(e.target).length === 0)
+    {
+        container.removeClass("open");
+    }
+});
+
+
+$("select").on("change" , function() {
+  
+  var selection = $(this).find("option:selected").text(),
+      labelFor = $(this).attr("id"),
+      label = $("[for='" + labelFor + "']");
+    
+  label.find(".selection-choice").html(selection);
+    
+});
+
+
+/* END: 3rd clickable dropdown button javascript */ 
+
+
