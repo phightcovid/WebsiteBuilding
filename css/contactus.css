@@ -154,7 +154,7 @@ body {
  
 }
 
-.column:hover .overlay {
+.column:hover, .column:active .overlay {
   opacity: 80%;
 }
 
