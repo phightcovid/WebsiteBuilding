@@ -1,0 +1,140 @@
+html {
+  color: Black;
+  font-family: 'Gotham', sans-serif;
+}
+
+header{
+     
+    overflow: hidden;
+    background: #FFF; 
+    color: #ffffff;
+  /* font:400 .9em/1.9 'Open Sans', Calibri, Helvetica, Arial, sans-serif; */
+}
+
+
+h1 {
+color: #000;
+font-family: 'Gotham', sans-serif;
+font-size: 22px;
+font-weight: 200;
+margin-top: 0px;
+margin-bottom: 1px;
+position: center;
+}
+
+
+/*** START: Line break */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*** END: Line break */ 
+
+/* Start: Use bootstrap for header conatiner, rows and columns; */ 
+
+
+.col-sm-2 {
+  position: relative;
+  width: 100%;
+}
+
+.col-sm-4 {
+  position: center; 
+  width: 100%;
+  text-align: center; 
+}
+
+.col-sm-6 {
+  position: center; 
+  width: 100%;
+  text-align: center; 
+}
+
+.col-sm-12 {
+  position: relative; 
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
+
+}
+
+
+.text {
+  color: #000;
+  font-size: 17px;
+  position: relative; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  padding: 15px;
+}
+
+.text1 {
+  color: #fff;
+  font-family: 'Gotham', sans-serif;
+  font-size: 20px;
+  font-weight: 200;
+  margin-top: 0px;
+  margin-bottom: 1px;
+  padding: 15px;
+}
+
+.text2 {
+  color: #fff;
+  font-size: 15px;
+  padding: 10px;
+
+} 
+/***************************/
+/* Styling Navigation Menu */
+/***************************/
+#menu{
+    float: right;
+    width: 90%; 
+    height: 100%;
+    margin: none;
+}
+     
+#menu ul{
+    text-align: center;
+    float: right;
+    margin: none;
+    background: #FFF;
+}
+     
+#menu li{
+    display: inline-block;
+    padding: none;
+    margin: none;
+}
+     
+#menu li a, #menu li span{
+    display: inline-block;
+    padding: 0em 1.0em;
+    text-decoration: none;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 60px;
+}
+     
+#menu li a{
+         
+    color: #000;
+}
+     
+#menu li:hover a, #menu li span{
+     
+    text-decoration: underline;
+    color: #f59052;
+
+}
+/* end of header styling */ 
+
+

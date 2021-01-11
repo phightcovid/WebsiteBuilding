@@ -1,0 +1,200 @@
+html {
+  color: Black;
+  font-family: 'Gotham', sans-serif;
+}
+
+/****START: HEADER STYLING***/
+/*************************/
+/*    Styling  Header    */
+/*************************/
+header{
+     
+    overflow: hidden;
+    background: #FFF; 
+  color: #ffffff;
+  /* font:400 .9em/1.9 'Open Sans', Calibri, Helvetica, Arial, sans-serif; */
+}
+ 
+#top-header {
+         
+    text-align: center;
+    height: 80px;
+    overflow: hidden;
+    background-color: #000
+    font-weight: 500;
+    padding: 20px 10px;
+}
+
+ 
+/****************/   
+/* Styling Logo */
+/****************/
+#logo{
+    float: left;
+    padding: none;
+    margin: none;
+    height: 60px;
+    width: 30%;
+}
+ 
+#logo img{
+    width: 30%;
+    float: left;
+    padding: 10px 0px;
+    /*filter: brightness(1.0) opacity(0.75); */ 
+
+
+}    
+ 
+/***************************/
+/* Styling Navigation Menu */
+/***************************/
+#menu{
+    float: right;
+    width: 70%;
+    height: 100%;
+    margin: none;
+}
+     
+#menu ul{
+    text-align: center;
+    float: right;
+    margin: none;
+    background: #FFF;
+}
+     
+#menu li{
+    display: inline-block;
+    padding: none;
+    margin: none;
+}
+     
+#menu li a, #menu li span{
+    display: inline-block;
+    padding: 0em 1.5em;
+    text-decoration: none;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 60px;
+}
+     
+#menu li a{
+         
+    color: #000;
+}
+     
+#menu li:hover a, #menu li span{
+     
+    text-decoration: underline;
+    color: #f59052;
+
+}
+
+
+
+/************** END of header styling */
+
+/* BEGINNING OF BODY!! */ 
+body {
+  background: #FFF; 
+  color: #000;
+  font-family: 'Gotham', sans-serif;
+  font-weight: 350;
+  margin-top: 1em;
+  margin-bottom: 1em; 
+}
+/**** START: header 1 ***/
+
+h1 {
+color: #000;
+font-family: 'Gotham', sans-serif;
+font-size: 28px;
+font-weight: 200;
+margin-top: 1em;
+margin-bottom: 1em;
+}
+
+/**** END: header 1 
+
+/*** START: Line break */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*** END: Line break  */ 
+
+/*** START: Semi Line break 
+
+.semi {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+    left: 40%;
+    right:40%;
+}
+
+/*** END: Semi Line break  */ 
+
+/* START: Bootstrap for row/column creation */ 
+
+.row div:nth-child(odd)  {
+  /* border: 3px dashed yellow; */ 
+  /* background-color: #666; */ 
+  color: #fff
+  font-family: 'Gotham', sans-serif;
+  font-weight: 350;
+}
+
+.row div:nth-child(even)  {
+  /* border: 3px dashed red; */ 
+  background-color: #ddd;
+  font-family: 'Gotham', sans-serif;
+  font-weight: 350;
+}
+
+
+/* END: Bootstrap for row/column creation */
+
+/***** Start: Text when hover over images */ 
+
+.col-sm-6 {
+  position: relative;
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 60%;
+  bottom: 10%;
+  left: 5%;
+  right: 5%; 
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #fff
+ 
+}
+
+.col-sm-6 .overlay {
+  opacity: 70%;
+}
+
+.text {
+  color: #000;
+  font-size: 18px;
+  position: relative; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+/***** End: Text when hover over images */ 

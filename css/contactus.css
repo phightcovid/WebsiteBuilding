@@ -1,4 +1,4 @@
-CSS for Contact US Page
+CSS for People Page
 
 html {
   color: Black;
@@ -20,7 +20,7 @@ header{
 #top-header {
          
     text-align: center;
-    height: 60px;
+    height: 80px;
     overflow: hidden;
     background-color: #000
     font-weight: 500;
@@ -43,7 +43,7 @@ header{
     width: 30%;
     float: left;
     padding: 10px 0px;
-    filter: brightness(1.0) opacity(0.75);
+    /*filter: brightness(1.0) opacity(0.75); */ 
 
 
 }    
@@ -168,7 +168,7 @@ body {
   -ms-transform: translate(-50%, -50%);
 }
 
-
+/***** End: Text when hover over images */ 
 
 
  
