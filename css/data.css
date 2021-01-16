@@ -23,18 +23,6 @@ position: center;
 }
 
 
-/*** START: Line break */
-
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
-}
-
-/*** END: Line break */ 
 
 /* Start: Use bootstrap for header conatiner, rows and columns; */ 
 
@@ -68,12 +56,16 @@ hr {
 .text {
   color: #000;
   font-size: 17px;
-  position: relative; 
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+  /* position: relative; */ 
+  /* top: 50%; */ 
+  /*left: 50%; */ 
+  /*transform: translate(-50%, -50%);*/ 
+  /*-ms-transform: translate(-50%, -50%);*/ 
   padding: 15px;
+  font-family: 'Gotham', sans-serif;
+  font-weight: 200;
+  margin-top: 0px;
+  margin-bottom: 1px; 
 }
 
 .text1 {
@@ -87,11 +79,28 @@ hr {
 }
 
 .text2 {
+  color: #000;
+  font-size: 17px;
+   /* position: relative; */ 
+   top: 50%;  
+   left: 50%;  
+  /* transform: translate(-50%, -50%); */ 
+  /* -ms-transform: translate(-50%, -50%); */ 
+  padding: 5px;
+  font-family: 'Gotham', sans-serif;
+  font-weight: 200;
+  /* margin-top: 0px;
+  margin-bottom: 1px; */ 
+  
+
+} 
+
+/* .text2 {
   color: #fff;
   font-size: 15px;
   padding: 10px;
 
-} 
+} */ 
 /***************************/
 /* Styling Navigation Menu */
 /***************************/

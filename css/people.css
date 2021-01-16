@@ -4,17 +4,57 @@ html {
   color: Black;
   font-family: 'Gotham', sans-serif;
 }
-
-/****START: HEADER STYLING***/
-/*************************/
-/*    Styling  Header    *
-/*************************/
 header{
      
     overflow: hidden;
     background: #FFF; 
   color: #ffffff;
   /* font:400 .9em/1.9 'Open Sans', Calibri, Helvetica, Arial, sans-serif; */
+}
+
+.col-sm-2 {
+  position: relative;
+  width: 100%;
+  padding: 1em;
+} 
+
+.col-sm-4 {
+  position: center; 
+  width: 100%;
+  text-align: center; 
+}
+
+.col-sm-5 {
+  position: center; 
+  width: 100%;
+  text-align: center; 
+}
+
+.col-sm-6 {
+  position: center; 
+  width: 100%;
+  text-align: center; 
+}
+
+.text1 {
+  color: #000;
+  font-family: 'Gotham', sans-serif;
+  font-size: 32px;
+  font-weight: 200;
+  margin-top: 0px;
+  margin-bottom: 1px;
+} 
+
+/****START: HEADER STYLING***/
+/*************************/
+/*    Styling  Header    *
+/*************************
+header{
+     
+    overflow: hidden;
+    background: #FFF; 
+  color: #ffffff;
+  /* font:400 .9em/1.9 'Open Sans', Calibri, Helvetica, Arial, sans-serif; *
 }
  
 #top-header {
@@ -30,7 +70,7 @@ header{
  
 /****************/   
 /* Styling Logo */
-/****************/
+/****************
 #logo{
     float: left;
     padding: none;
@@ -53,7 +93,7 @@ header{
 /***************************/
 #menu{
     float: right;
-    width: 70%;
+    width: 90%;
     height: 100%;
     margin: none;
 }
@@ -112,6 +152,18 @@ body {
   text-align: center;
 } 
 
+/*** START: Line break */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*** END: Line break */ 
 
 /***** Start: Text when hover over images */ 
 
@@ -199,14 +251,14 @@ body {
 padding: 1em;
 }
 
-.col-sm-2 {
+/* .col-sm-2 {
   
 padding: 1em;
 /*line-height: 18px; */ 
 
-}
+} /* 
 
-/* START: People circles */ 
+/* START: People circles * 
 
 a {
 text-decoration: none;

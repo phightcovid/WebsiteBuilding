@@ -3,16 +3,56 @@ html {
   font-family: 'Gotham', sans-serif;
 }
 
-/****START: HEADER STYLING***/
-/*************************/
-/*    Styling  Header    */
-/*************************/
 header{
      
     overflow: hidden;
     background: #FFF; 
   color: #ffffff;
   /* font:400 .9em/1.9 'Open Sans', Calibri, Helvetica, Arial, sans-serif; */
+}
+
+.col-sm-2 {
+  position: relative;
+  width: 100%;
+}
+
+.col-sm-4 {
+  position: center; 
+  width: 100%;
+  text-align: center; 
+}
+
+.col-sm-5 {
+  position: center; 
+  width: 100%;
+  text-align: center; 
+}
+
+.col-sm-6 {
+  position: center; 
+  width: 100%;
+  text-align: center; 
+}
+
+.text1 {
+  color: #000;
+  font-family: 'Gotham', sans-serif;
+  font-size: 32px;
+  font-weight: 200;
+  margin-top: 0px;
+  margin-bottom: 1px;
+} 
+
+/****START: HEADER STYLING***
+/*************************/
+/*    Styling  Header    */
+/*************************
+header{
+     
+    overflow: hidden;
+    background: #FFF; 
+  color: #ffffff;
+  /* font:400 .9em/1.9 'Open Sans', Calibri, Helvetica, Arial, sans-serif; *
 }
  
 #top-header {
@@ -25,7 +65,7 @@ header{
     padding: 20px 10px;
 }
 
-/*#top-header-title {
+#top-header-title {
          
     text-align: center;
     height: 80px;
@@ -37,7 +77,7 @@ header{
  
 /****************/   
 /* Styling Logo */
-/****************/
+/****************
 #logo{
     float: left;
     padding: none;
@@ -60,7 +100,7 @@ header{
 /***************************/
 #menu{
     float: right;
-    width: 70%;
+    width: 90%;
     height: 100%;
     margin: none;
 }
@@ -135,7 +175,7 @@ hr {
     padding: 0;
 }
 
-/*** END: Line break */ 
+/*** END: Line break */  
 
 .titlecontainer span {
 color: #000;
@@ -149,6 +189,7 @@ position: center;
 
 /* START: 3rd clickable dropdown button CSS */ 
 
+
 @import "compass/css3";
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600);
@@ -159,18 +200,18 @@ position: center;
   font:400 .9em/1.9 'Open Sans', Calibri, Helvetica, Arial, sans-serif; 
   } */ 
 
-.custom-select {
+/* .custom-select {
   position : relative;
   width: 100%;
   max-width:  25em;
   margin: 2em auto;
   cursor: pointer;
-}
+} */ 
 .select,
 .label{
   display: block;
 }
-.select {
+ .select {
   width: 100%;
   position: absolute;
   top: 0;
@@ -180,7 +221,7 @@ position: center;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   background: none transparent;
   border: 0 none;
-}
+}  
 .label {
   position:  relative;
   padding: 1em;
@@ -196,19 +237,23 @@ position: center;
   border-left: 1px solid;
 }
 .open .label::after {
-   content: "▲";
+   content: "▲"; 
 }
 .select-1 {
+   margin: auto;
    background: #1c5570;
    color: #fff;
-  border-bottom: .25em solid darken(#21cf8f, 10);
+   border-bottom: .25em solid darken(#21cf8f, 10);
+   width: 50%;
   &:after {
-     border-color: darken(#21cf8f, 10);
-  }
+   border-color: darken(#21cf8f, 10);
+
+
+  } 
 
 /* END: 3rd clickable dropdown button CSS */ 
 
-/* START: Bootstrap for column creation */
+/* START: Bootstrap for column creation *
 
 .row div:nth-child(odd)  {
   border: 3px dashed yellow;
@@ -227,7 +272,7 @@ position: center;
 
 
 /* START: Image and Text */ 
-/***** Start: Position Images (Note images have 5:7 aspect ratio) */
+/***** Start: Position Images (Note images have 5:7 aspect ratio) *
 
 {
   box-sizing: border-box;
@@ -239,7 +284,7 @@ position: center;
   align-content: space-around;  
 }
 
-/* Create two equal columns that sit next to each other */ 
+/* Create two equal columns that sit next to each other * 
 .column {
   flex: 50%;
   align-items: center;
@@ -248,7 +293,7 @@ position: center;
 
 /**** End: Position Images *****/
 
-/***** Start: Text when hover over images */ 
+/***** Start: Text when hover over images * 
 
 .column2 {
   position: relative;
@@ -290,7 +335,7 @@ position: center;
 /* END: Image and Text */ 
 
 
-/** Start: Image and text side-by-side. */
+/** Start: Image and text side-by-side. *
 
 .scol {
   float: right
@@ -300,5 +345,71 @@ position: center;
   clear: left;
 }
 /* END: Image and text side-by-side. */ 
+
+/* .overlay {
+  position: absolute; 
+  top: 60%; 
+  bottom: 10%;
+  /*left: 0;*/
+  /*right: 0; */
+  /*opacity: 70%;*
+  transition: background-color 3s ease;
+  transition-delay: .5s;
+  font-family: 'Gotham', sans-serif;
+  font-weight: 350;
+  background-color: rgba(208,208,208,.8);/*#fff;*
+  z-index : 100;
+  margin-left: 2em; 
+  margin-right: 2em;
+  padding: .6em;
+  border-radius: 1em; 
+ 
+}
+
+.overlay2 {
+  position: absolute; 
+  top: 25%; 
+  /*bottom: 60%; 
+  /*left: 0;* 
+  right: 70%;  
+  /*opacity: 70%;*
+  transition: background-color 3s ease;
+  transition-delay: .5s;
+  font-family: 'Gotham', sans-serif;
+  font-weight: 350;
+  background-color: rgba(0,0,0,.75);/*#fff;*
+  z-index : 100;
+  margin-left: 2em; 
+  margin-right: 2em;
+  padding: .6em;
+  border-radius: 1em; 
+
+}
+
+.col-sm-6 .overlay {
+  opacity: 80%;
+}
+
+.text {
+  color: #000;
+  font-size: 17px;
+  position: relative; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  padding: 15px;
+}
+
+.text2 {
+  color: #fff;
+  font-size: 15px;
+  padding: 10px;
+  /*position: absolute; 
+  /*top: 50%; */ 
+  /*left: 50%; */ 
+  /*transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%); * 
+ } 
 
 

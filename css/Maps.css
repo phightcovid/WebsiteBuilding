@@ -2,17 +2,55 @@ html {
   color: Black;
   font-family: 'Gotham', sans-serif;
 }
-
-/****START: HEADER STYLING***/
-/*************************/
-/*    Styling  Header    */
-/*************************/
 header{
      
     overflow: hidden;
     background: #FFF; 
-  color: #ffffff;
+    color: #ffffff;
   /* font:400 .9em/1.9 'Open Sans', Calibri, Helvetica, Arial, sans-serif; */
+}
+
+.col-sm-2 {
+  position: relative;
+  width: 100%;
+}
+
+.col-sm-4 {
+  position: center; 
+  width: 100%;
+  text-align: center; 
+}
+
+.col-sm-5 {
+  position: center; 
+  width: 100%;
+  text-align: center; 
+}
+
+.col-sm-6 {
+  position: center; 
+  width: 100%;
+  text-align: center; 
+}
+
+.text1 {
+  color: #000;
+  font-family: 'Gotham', sans-serif;
+  font-size: 32px;
+  font-weight: 200;
+  margin-top: 0px;
+  margin-bottom: 1px;
+}
+/****START: HEADER STYLING***/
+/*************************/
+/*    Styling  Header    */
+/*************************
+header{
+     
+    overflow: hidden;
+    background: #FFF; 
+    color: #ffffff;
+  /* font:400 .9em/1.9 'Open Sans', Calibri, Helvetica, Arial, sans-serif; 
 }
  
 #top-header {
@@ -28,7 +66,7 @@ header{
  
 /****************/   
 /* Styling Logo */
-/****************/
+/****************
 #logo{
     float: left;
     padding: none;
@@ -92,7 +130,7 @@ header{
 
 
 
-/************** END of header styling */
+/************** END of header styling 
 
 /* BEGINNING OF BODY!! */ 
 body {
@@ -144,18 +182,18 @@ hr {
 
 /*** END: Semi Line break  */ 
 
-/* START: Bootstrap for row/column creation */ 
+/* START: Bootstrap for row/column creation  
 
 .row div:nth-child(odd)  {
   /* border: 3px dashed yellow; */ 
-  /* background-color: #666; */ 
+  /* background-color: #666; * 
   color: #fff
   font-family: 'Gotham', sans-serif;
   font-weight: 350;
 }
 
 .row div:nth-child(even)  {
-  /* border: 3px dashed red; */ 
+  /* border: 3px dashed red; * 
   background-color: #ddd;
   font-family: 'Gotham', sans-serif;
   font-weight: 350;
@@ -166,10 +204,6 @@ hr {
 
 /***** Start: Text when hover over images */ 
 
-.col-sm-6 {
-  position: relative;
-  width: 100%;
-}
 
 .overlay {
   position: absolute;
