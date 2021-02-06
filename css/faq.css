@@ -1,0 +1,157 @@
+html {
+  color: Black;
+  font-family: 'Gotham', sans-serif;
+}
+
+header{
+     
+    overflow: hidden;
+    background: #FFF; 
+    color: #ffffff;
+  /* font:400 .9em/1.9 'Open Sans', Calibri, Helvetica, Arial, sans-serif; */
+}
+
+/* Start: Use bootstrap for header conatiner, rows and columns; */ 
+
+
+.col-sm-2 {
+  position: relative;
+  width: 100%;
+}
+
+.col-sm-4 {
+  position: center; 
+  width: 100%;
+  text-align: center; 
+}
+
+.col-sm-5 {
+  position: center; 
+  width: 100%;
+  text-align: center; 
+}
+
+.col-sm-6 {
+  position: center; 
+  width: 100%;
+  text-align: center; 
+}
+
+.text1 {
+  color: #000;
+  font-family: 'Gotham', sans-serif;
+  font-size: 32px;
+  font-weight: 200;
+  margin-top: 0px;
+  margin-bottom: 1px;
+}
+
+/***************************/
+/* Styling Navigation Menu */
+/***************************/
+#menu{
+    float: right;
+    width: 90%;
+    height: 100%;
+    margin: none;
+}
+     
+#menu ul{
+    text-align: center;
+    float: right;
+    margin: none;
+    background: #FFF;
+}
+     
+#menu li{
+    display: inline-block;
+    padding: none;
+    margin: none;
+}
+     
+#menu li a, #menu li span{
+    display: inline-block;
+    padding: 0em 1.0em;
+    text-decoration: none;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 60px;
+}
+     
+#menu li a{
+         
+    color: #000;
+}
+     
+#menu li:hover a, #menu li span{
+     
+    text-decoration: underline;
+    color: #f59052;
+
+}
+
+.overlay {
+  position: absolute; 
+  top: 60%; 
+  bottom: 10%;
+  /*left: 0;*/
+  /*right: 0; */
+  /*opacity: 70%;*/
+  transition: background-color 3s ease;
+  transition-delay: .5s;
+  font-family: 'Gotham', sans-serif;
+  font-weight: 350;
+  background-color: rgba(208,208,208,.8);/*#fff;*/
+  z-index : 100;
+  margin-left: 2em; 
+  margin-right: 2em;
+  padding: .6em;
+  border-radius: 1em; 
+ 
+}
+
+.overlay2 {
+  position: absolute; 
+  top: 25%; 
+  /*bottom: 60%; 
+  /*left: 0;*/ 
+  right: 70%;  
+  /*opacity: 70%;*/
+  transition: background-color 3s ease;
+  transition-delay: .5s;
+  font-family: 'Gotham', sans-serif;
+  font-weight: 350;
+  background-color: rgba(0,0,0,.75);/*#fff;*/
+  z-index : 100;
+  margin-left: 2em; 
+  margin-right: 2em;
+  padding: .6em;
+  border-radius: 1em; 
+
+}
+
+.col-sm-6 .overlay {
+  opacity: 80%;
+}
+
+.text {
+  color: #000;
+  font-size: 17px;
+  position: relative; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  padding: 15px;
+}
+
+.text2 {
+  color: #fff;
+  font-size: 15px;
+  padding: 10px;
+  /*position: absolute; 
+  /*top: 50%; */ 
+  /*left: 50%; */ 
+  /*transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
