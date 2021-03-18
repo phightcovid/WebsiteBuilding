@@ -164,6 +164,34 @@ position: center;
 
 /**** END: header 1 
 
+/**** START: header 2 ***/
+
+h2 {
+color: #000;
+font-family: 'Gotham', sans-serif;
+font-size: 24px;
+font-weight: 200;
+margin-top: 0px;
+margin-bottom: 1px;
+position: center;
+}
+
+/**** END: header 2 ***/ 
+
+/**** START: header 3 ***/
+
+h3 {
+color: #000;
+font-family: 'Gotham', sans-serif;
+font-size: 20px;
+font-weight: 200;
+margin-top: 0px;
+margin-bottom: 1px;
+position: center;
+}
+
+/**** END: header 3 ***/ 
+
 /*** START: Line break */
 
 hr {
