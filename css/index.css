@@ -4,14 +4,14 @@ html {
 }
 
 header{
-     
+
     overflow: hidden;
-    background: #FFF; 
+    background: #FFF;
     color: #ffffff;
   /* font:400 .9em/1.9 'Open Sans', Calibri, Helvetica, Arial, sans-serif; */
 }
 
-/* Start: Use bootstrap for header conatiner, rows and columns; */ 
+/* Start: Use bootstrap for header conatiner, rows and columns; */
 
 
 .col-sm-2 {
@@ -20,21 +20,21 @@ header{
 }
 
 .col-sm-4 {
-  position: center; 
+  position: center;
   width: 100%;
-  text-align: center; 
+  text-align: center;
 }
 
 .col-sm-5 {
-  position: center; 
+  position: center;
   width: 100%;
-  text-align: center; 
+  text-align: center;
 }
 
 .col-sm-6 {
-  position: center; 
+  position: center;
   width: 100%;
-  text-align: center; 
+  text-align: center;
 }
 
 .text1 {
@@ -46,13 +46,123 @@ header{
   margin-bottom: 1px;
 }
 
+/* NOTE: Start of Animation Section */
+/* NOTE: animation for text expanding */
+@-webkit-keyframes tracking-in-expand {
+0% {
+  letter-spacing: -0.5em;
+  opacity: 0;
+}
+40% {
+  opacity: 0.6;
+}
+100% {
+  opacity: 1;
+}
+}
+@keyframes tracking-in-expand {
+0% {
+  letter-spacing: -0.5em;
+  opacity: 0;
+}
+40% {
+  opacity: 0.6;
+}
+100% {
+  opacity: 1;
+}
+}
+
+/* NOTE: Animation for the people header*/
+.tracking-in-expand {
+-webkit-animation: tracking-in-expand 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) 1.5s both;
+        animation: tracking-in-expand 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) 1.5s both;
+
+}
+
+///* NOTE: fade in pictures  */
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.fade-in {
+	-webkit-animation: fade-in 2s cubic-bezier(0.785, 0.135, 0.150, 0.860) 2.5s both;
+	        animation: fade-in 2s cubic-bezier(0.785, 0.135, 0.150, 0.860) 2.5s both;
+}
+
+/* NOTE: Green text box sliding in from right */
+@-webkit-keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+            transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+            transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(-110);
+            transform: translateX(-110);
+    opacity: 1;
+  }
+}
+
+
+.slide-in-right {
+	-webkit-animation: slide-in-right 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2.5s both;
+	        animation: slide-in-right 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2.5s both;
+}
+
+/* NOTE: text sliding in from left */
+@keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(-4px);
+            transform: translateX(-4px);
+    opacity: 1;
+  }
+}
+
+.slide-in-left {
+	-webkit-animation: slide-in-left 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) 3.5s both;
+	        animation: slide-in-left 3s cubic-bezier(0.250, 0.460, 0.450, 0.940) 3.5s both;
+          margin-bottom: 20px;
+          margin-top: 20px;
+}
+
+/* NOTE: End of animation section */
 /****START: HEADER STYLING***/
 /*************************/
 /*    Styling  Header    */
 /*************************/
- 
+
 /* #top-header {
-         
+
     text-align: center;
     height: 80px;
     overflow: hidden;
@@ -62,16 +172,16 @@ header{
 }
 
 /*#top-header-title {
-         
+
     text-align: center;
     height: 80px;
     overflow: hidden;
     background-color: #000
     font-weight: 500;
     padding: 20px 10px;
-} */ 
- 
-/****************/   
+} */
+
+/****************/
 /* Styling Logo */
 /****************/
 /*#logo{
@@ -81,7 +191,7 @@ header{
     height: 100px;
     width: 30%;
 }
- 
+
 #logo img{
     width: 30%;
     float: left;
@@ -89,8 +199,8 @@ header{
     filter: brightness(1.0) opacity(0.75);
 
 
-}    
- 
+}
+
 /***************************/
 /* Styling Navigation Menu */
 /***************************/
@@ -100,20 +210,20 @@ header{
     height: 100%;
     margin: none;
 }
-     
+
 #menu ul{
     text-align: center;
     float: right;
     margin: none;
     background: #FFF;
 }
-     
+
 #menu li{
     display: inline-block;
     padding: none;
     margin: none;
 }
-     
+
 #menu li a, #menu li span{
     display: inline-block;
     padding: 0em 1.0em;
@@ -122,14 +232,14 @@ header{
     text-transform: uppercase;
     line-height: 60px;
 }
-     
+
 #menu li a{
-         
+
     color: #000;
 }
-     
+
 #menu li:hover a, #menu li span{
-     
+
     text-decoration: underline;
     color: #f59052;
 
@@ -137,14 +247,14 @@ header{
 
 /************** END of header styling */
 
-/* BEGINNING OF BODY!! */ 
+/* BEGINNING OF BODY!! */
 /*body {
-  background: #FFF; 
+  background: #FFF;
   color: #000;
   font-family: 'Gotham', sans-serif;
   font-weight: 350;
   margin-top: 0px;
-  margin-bottom: 1px; 
+  margin-bottom: 1px;
 }
 /**** START: header 1 ***/
 
@@ -158,7 +268,7 @@ margin-bottom: 1px;
 position: center;
 }
 
-/**** END: header 1 
+/**** END: header 1
 
 /*** START: Line break */
 
@@ -171,11 +281,11 @@ position: center;
     padding: 0;
 }
 
-/*** END: Line break */ 
+/*** END: Line break */
 
 
 
-/* START: Bootstrap for column creation 
+/* START: Bootstrap for column creation
 
 .row div:nth-child(odd)  {
   border: 3px dashed yellow;
@@ -194,8 +304,8 @@ position: center;
 
 
 .overlay {
-  position: absolute; 
-  top: 60%; 
+  position: absolute;
+  top: 60%;
   bottom: 10%;
   /*left: 0;*/
   /*right: 0; */
@@ -206,19 +316,19 @@ position: center;
   font-weight: 350;
   background-color: rgba(208,208,208,.8);/*#fff;*/
   z-index : 100;
-  margin-left: 2em; 
+  margin-left: 2em;
   margin-right: 2em;
   padding: .6em;
-  border-radius: 1em; 
- 
+  border-radius: 1em;
+
 }
 
 .overlay2 {
-  position: absolute; 
-  top: 25%; 
-  /*bottom: 60%; 
-  /*left: 0;*/ 
-  right: 70%;  
+  position: absolute;
+  top: 25%;
+  /*bottom: 60%;
+  /*left: 0;*/
+  right: 70%;
   /*opacity: 70%;*/
   transition: background-color 3s ease;
   transition-delay: .5s;
@@ -226,10 +336,10 @@ position: center;
   font-weight: 350;
   background-color: rgba(0,0,0,.75);/*#fff;*/
   z-index : 100;
-  margin-left: 2em; 
+  margin-left: 2em;
   margin-right: 2em;
   padding: .6em;
-  border-radius: 1em; 
+  border-radius: 1em;
 
 }
 
@@ -240,7 +350,7 @@ position: center;
 .text {
   color: #000;
   font-size: 17px;
-  position: relative; 
+  position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -252,17 +362,11 @@ position: center;
   color: #fff;
   font-size: 15px;
   padding: 10px;
-  /*position: absolute; 
-  /*top: 50%; */ 
-  /*left: 50%; */ 
+  /*position: absolute;
+  /*top: 50%; */
+  /*left: 50%; */
   /*transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
 }
 
-/***** End: Text when hover over images */ 
-
-
- 
-
-
-
+/***** End: Text when hover over images */
