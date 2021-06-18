@@ -5,9 +5,9 @@ html {
   font-family: 'Gotham', sans-serif;
 }
 header{
-     
+
     overflow: hidden;
-    background: #FFF; 
+    background: #FFF;
   color: #ffffff;
   /* font:400 .9em/1.9 'Open Sans', Calibri, Helvetica, Arial, sans-serif; */
 }
@@ -16,24 +16,27 @@ header{
   position: relative;
   width: 100%;
   padding: 1em;
-} 
-
-.col-sm-4 {
-  position: center; 
-  width: 100%;
-  text-align: center; 
 }
 
-.col-sm-5 {
-  position: center; 
+
+.col-sm-4 {
+  position: center;
   width: 100%;
-  text-align: center; 
+  text-align: center;
+}
+
+
+
+.col-sm-5 {
+  position: center;
+  width: 100%;
+  text-align: center;
 }
 
 .col-sm-6 {
-  position: center; 
+  position: center;
   width: 100%;
-  text-align: center; 
+  text-align: center;
 }
 
 .text1 {
@@ -43,22 +46,104 @@ header{
   font-weight: 200;
   margin-top: 0px;
   margin-bottom: 1px;
-} 
+}
+
+/* NOTE: ANIMATION SECTION */
+  /* NOTE: animation for text expanding */
+@-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* NOTE: Animation for the people header*/
+.tracking-in-expand {
+	-webkit-animation: tracking-in-expand 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) 0.7s both;
+	        animation: tracking-in-expand 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) 0.7s both;
+}
+/* NOTE: Animation for undergrads  */
+.tracking-in-expand-delay{
+	-webkit-animation: tracking-in-expand 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) 2.5s both;
+	        animation: tracking-in-expand 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) 2.5s both;
+
+}
+/* NOTE: Animation for High Schoolers */
+.tracking-in-expand-delay-long{
+	-webkit-animation: tracking-in-expand 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) 5.0s both;
+	        animation: tracking-in-expand 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) 5.0s both;
+
+}
+
+///* NOTE: fade in pictures  */
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.fade-in {
+	-webkit-animation: fade-in 2s cubic-bezier(0.785, 0.135, 0.150, 0.860) 1.5s both;
+	        animation: fade-in 2s cubic-bezier(0.785, 0.135, 0.150, 0.860) 1.5s both;
+}
+
+
+/* NOTE: 1st set of undergrads */
+.fadetwo{
+  -webkit-animation: fade-in 2s cubic-bezier(0.785, 0.135, 0.150, 0.860) 3.5s both;
+	        animation: fade-in 2s cubic-bezier(0.785, 0.135, 0.150, 0.860) 3.5s both;
+
+}
+/* NOTE: 2nd set of undergrads */
+.fadethree{
+  -webkit-animation: fade-in 2s cubic-bezier(0.785, 0.135, 0.150, 0.860) 3.8s both;
+	        animation: fade-in 2s cubic-bezier(0.785, 0.135, 0.150, 0.860) 3.8s both;
+}
+
+/* NOTE: end of animation section */
 
 /****START: HEADER STYLING***/
 /*************************/
 /*    Styling  Header    *
 /*************************
 header{
-     
+
     overflow: hidden;
-    background: #FFF; 
+    background: #FFF;
   color: #ffffff;
   /* font:400 .9em/1.9 'Open Sans', Calibri, Helvetica, Arial, sans-serif; *
 }
- 
+
 #top-header {
-         
+
     text-align: center;
     height: 80px;
     overflow: hidden;
@@ -67,8 +152,8 @@ header{
     padding: 20px 10px;
 }
 
- 
-/****************/   
+
+/****************/
 /* Styling Logo */
 /****************
 #logo{
@@ -78,16 +163,16 @@ header{
     height: 60px;
     width: 30%;
 }
- 
+
 #logo img{
     width: 30%;
     float: left;
     padding: 10px 0px;
-    /*filter: brightness(1.0) opacity(0.75); */ 
+    /*filter: brightness(1.0) opacity(0.75); */
 
 
-}    
- 
+}
+
 /***************************/
 /* Styling Navigation Menu */
 /***************************/
@@ -97,20 +182,20 @@ header{
     height: 100%;
     margin: none;
 }
-     
+
 #menu ul{
     text-align: center;
     float: right;
     margin: none;
     background: #FFF;
 }
-     
+
 #menu li{
     display: inline-block;
     padding: none;
     margin: none;
 }
-     
+
 #menu li a, #menu li span{
     display: inline-block;
     padding: 0em 1.5em;
@@ -119,38 +204,46 @@ header{
     text-transform: uppercase;
     line-height: 60px;
 }
-     
+
 #menu li a{
-         
+
     color: #000;
 }
-     
+
 #menu li:hover a, #menu li span{
-     
+
     text-decoration: underline;
     color: #f59052;
 
 }
 
 /************** END of header styling */
- 
 
-/* BEGINNING OF BODY!! */ 
+
+/* BEGINNING OF BODY!! */
 body {
-  background: #FFF; 
+  background: #FFF;
   color: #000;
   font-family: 'Gotham', sans-serif;
   font-weight: 350;
   margin-top: 0px;
-  margin-bottom: 1px; 
+  margin-bottom: 1px;
 }
 
- h1 { 
+ h1 {
   color: #000;
   font-family: 'Gotham', sans-serif;
-  font-weight: 350; 
+  font-weight: 350;
   text-align: center;
-} 
+}
+
+  h2{
+    color: #000;
+    font-family: 'Gotham', sans-serif;
+    font-weight: 350;
+    text-align: center;
+
+  }
 
 /*** START: Line break */
 
@@ -163,9 +256,9 @@ hr {
     padding: 0;
 }
 
-/*** END: Line break */ 
+/*** END: Line break */
 
-/***** Start: Text when hover over images */ 
+/***** Start: Text when hover over images */
 
 /*.col-sm-6 {
   position: relative;
@@ -173,7 +266,7 @@ hr {
 }
 */
 .overlay {
-  position: absolute; 
+  position: absolute;
   top: 60%;
   /*bottom: 10%;*/
   /*left: 0;*/
@@ -185,7 +278,7 @@ hr {
   font-weight: 350;
   background-color: rgba(208,208,208,.8);/*#fff;*/
   z-index : 100;
-  margin-left: 2em; 
+  margin-left: 2em;
   margin-right: 2em;
   padding: .6em;
   border-radius: 1em;
@@ -193,8 +286,8 @@ hr {
 
 
 .overlay6 {
-  position: relative; 
-  /*top: 60%;*/ 
+  position: relative;
+  /*top: 60%;*/
   /*bottom: 10%;*/
   /*left: 0;*/
   /*right: 10%;*/
@@ -205,12 +298,12 @@ hr {
   font-weight: 350;
   background-color: rgba(208,208,208,.8);/*#fff;*/
   z-index : 100;
-  margin-left: 1em; 
+  margin-left: 1em;
   margin-right: 1em;
   padding: .5em;
   border-radius: .5em;
 
-  
+
 }
 /*
 .col-sm-6 .overlay {
@@ -228,7 +321,7 @@ hr {
   /*-ms-transform: translate(-50%, -50%);*/
 }
 
-/***** End: Text when hover over images */ 
+/***** End: Text when hover over images */
 
 .text6 {
   color: #000;
@@ -242,23 +335,23 @@ hr {
 }
 
 .container {
-  /*padding: 2px; */ 
+  /*padding: 2px; */
   /*background-color: rgba(83,85,87,.8); */
 }
 
 .col-sm-1 {
-  
+
 padding: 1em;
 }
 
 /* .col-sm-2 {
-  
+
 padding: 1em;
-/*line-height: 18px; */ 
+/*line-height: 18px; */
 
-} /* 
+} /*
 
-/* START: People circles * 
+/* START: People circles *
 
 a {
 text-decoration: none;
@@ -266,6 +359,5 @@ white-space: nowrap;
 }
 a:hover {
 text-decoration: underline;
-} 
-/* END: People circles */ 
-
+}
+/* END: People circles */
