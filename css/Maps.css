@@ -3,12 +3,67 @@ html {
   font-family: 'Gotham', sans-serif;
 }
 header{
-     
+
     overflow: hidden;
-    background: #FFF; 
+    background: #FFF;
     color: #ffffff;
   /* font:400 .9em/1.9 'Open Sans', Calibri, Helvetica, Arial, sans-serif; */
 }
+
+
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #828282;
+
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+
+}
+
+li a:hover {
+  background-color: #f8f8ff;
+  text-decoration: none;
+  color: black;
+}
+
+/* NOTE: Nav menu changes */
+.menuNav{
+  padding-left: 10px;
+  padding-top: 15px;
+}
+/* NOTE: messes with the pitt logo  */
+.pittlogo{
+  height: 75%;
+  width: 100%;
+  padding-left: 30px;
+
+}
+
+/* NOTE: used to control the PHIGHTCOIVD HEADER  */
+.shiftRight{
+  padding-left: 290px;
+}
+
+.textSize{
+  font-size: 25px
+
+}
+
 
 .col-sm-2 {
   position: relative;
@@ -16,21 +71,21 @@ header{
 }
 
 .col-sm-4 {
-  position: center; 
+  position: center;
   width: 100%;
-  text-align: center; 
+  text-align: center;
 }
 
 .col-sm-5 {
-  position: center; 
+  position: center;
   width: 100%;
-  text-align: center; 
+  text-align: center;
 }
 
 .col-sm-6 {
-  position: center; 
+  position: center;
   width: 100%;
-  text-align: center; 
+  text-align: center;
 }
 
 .text1 {
@@ -46,15 +101,15 @@ header{
 /*    Styling  Header    */
 /*************************
 header{
-     
+
     overflow: hidden;
-    background: #FFF; 
+    background: #FFF;
     color: #ffffff;
-  /* font:400 .9em/1.9 'Open Sans', Calibri, Helvetica, Arial, sans-serif; 
+  /* font:400 .9em/1.9 'Open Sans', Calibri, Helvetica, Arial, sans-serif;
 }
- 
+
 #top-header {
-         
+
     text-align: center;
     height: 80px;
     overflow: hidden;
@@ -63,8 +118,8 @@ header{
     padding: 20px 10px;
 }
 
- 
-/****************/   
+
+/****************/
 /* Styling Logo */
 /****************
 #logo{
@@ -74,72 +129,33 @@ header{
     height: 60px;
     width: 30%;
 }
- 
+
 #logo img{
     width: 30%;
     float: left;
     padding: 10px 0px;
-    /*filter: brightness(1.0) opacity(0.75); */ 
+    /*filter: brightness(1.0) opacity(0.75); */
 
 
-}    
- 
+}
+
 /***************************/
 /* Styling Navigation Menu */
 /***************************/
-#menu{
-    float: right;
-    width: 70%;
-    height: 100%;
-    margin: none;
-}
-     
-#menu ul{
-    text-align: center;
-    float: right;
-    margin: none;
-    background: #FFF;
-}
-     
-#menu li{
-    display: inline-block;
-    padding: none;
-    margin: none;
-}
-     
-#menu li a, #menu li span{
-    display: inline-block;
-    padding: 0em 1.5em;
-    text-decoration: none;
-    font-weight: 500;
-    text-transform: uppercase;
-    line-height: 60px;
-}
-     
-#menu li a{
-         
-    color: #000;
-}
-     
-#menu li:hover a, #menu li span{
-     
-    text-decoration: underline;
-    color: #f59052;
-
-}
 
 
 
-/************** END of header styling 
 
-/* BEGINNING OF BODY!! */ 
+/************** END of header styling
+
+/* BEGINNING OF BODY!! */
 body {
-  background: #FFF; 
+  background: #FFF;
   color: #000;
   font-family: 'Gotham', sans-serif;
   font-weight: 350;
   margin-top: 1em;
-  margin-bottom: 1em; 
+  margin-bottom: 1em;
 }
 /**** START: header 1 ***/
 
@@ -152,7 +168,7 @@ margin-top: 1em;
 margin-bottom: 1em;
 }
 
-/**** END: header 1 
+/**** END: header 1
 
 /*** START: Line break */
 
@@ -165,9 +181,9 @@ hr {
     padding: 0;
 }
 
-/*** END: Line break  */ 
+/*** END: Line break  */
 
-/*** START: Semi Line break 
+/*** START: Semi Line break
 
 .semi {
     display: block;
@@ -180,20 +196,20 @@ hr {
     right:40%;
 }
 
-/*** END: Semi Line break  */ 
+/*** END: Semi Line break  */
 
-/* START: Bootstrap for row/column creation  
+/* START: Bootstrap for row/column creation
 
 .row div:nth-child(odd)  {
-  /* border: 3px dashed yellow; */ 
-  /* background-color: #666; * 
+  /* border: 3px dashed yellow; */
+  /* background-color: #666; *
   color: #fff
   font-family: 'Gotham', sans-serif;
   font-weight: 350;
 }
 
 .row div:nth-child(even)  {
-  /* border: 3px dashed red; * 
+  /* border: 3px dashed red; *
   background-color: #ddd;
   font-family: 'Gotham', sans-serif;
   font-weight: 350;
@@ -202,7 +218,7 @@ hr {
 
 /* END: Bootstrap for row/column creation */
 
-/***** Start: Text when hover over images */ 
+/***** Start: Text when hover over images */
 
 
 .overlay {
@@ -210,11 +226,11 @@ hr {
   top: 60%;
   bottom: 10%;
   left: 5%;
-  right: 5%; 
+  right: 5%;
   opacity: 0;
   transition: .5s ease;
   background-color: #fff
- 
+
 }
 
 .col-sm-6 .overlay {
@@ -224,11 +240,11 @@ hr {
 .text {
   color: #000;
   font-size: 18px;
-  position: relative; 
+  position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
 }
 
-/***** End: Text when hover over images */ 
+/***** End: Text when hover over images */

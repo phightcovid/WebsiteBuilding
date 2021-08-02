@@ -1,0 +1,53 @@
+
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #828282;
+
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+
+}
+
+li a:hover {
+  background-color: #f8f8ff;
+  text-decoration: none;
+  color: black;
+}
+
+/* NOTE: Nav menu changes */
+.menuNav{
+  padding-left: 10px;
+  padding-top: 15px;
+}
+/* NOTE: messes with the pitt logo  */
+.pittlogo{
+  height: 75%;
+  width: 100%;
+  padding-left: 30px;
+
+}
+
+/* NOTE: used to control the PHIGHTCOIVD HEADER  */
+.shiftRight{
+  padding-left: 290px;
+}
+
+.textSize{
+  font-size: 25px
+
+}
