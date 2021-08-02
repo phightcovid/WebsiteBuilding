@@ -262,47 +262,6 @@ li a:hover {
 /***************************/
 /* Styling Navigation Menu */
 /***************************/
-<<<<<<< HEAD
-=======
-#menu{
-    float: right;
-    width: 90%;
-    height: 100%;
-    margin: none;
-}
-
-#menu ul{
-    text-align: center;
-    float: right;
-    margin: none;
-    background: #FFF;
-}
-
-#menu li{
-    display: inline-block;
-    padding: none;
-    margin: none;
-}
-
-#menu li a, #menu li span{
-    display: inline-block;
-    padding: 0em 1.0em;
-    text-decoration: none;
-    font-weight: 500;
-    text-transform: uppercase;
-    line-height: 60px;
-}
-
-#menu li a{
-
-    color: #000;
-}
-
-#menu li:hover a, #menu li span{
-
-    text-decoration: underline;
-    color: #f59052;
->>>>>>> 6b3991f0c8547ba111ec1522b7f17effbbba7eeb
 
 
 /************** END of header styling */
