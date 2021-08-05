@@ -82,6 +82,17 @@ li a:hover {
   text-align: center;
 }
 
+.col-sm-7 {
+  width: 100%;
+}
+.col-lg-12{
+  position: center;
+  width: 100%;
+  height: 120%;
+  padding-top: 70px;
+
+}
+
 .text1 {
   color: #000;
   font-family: 'Gotham', sans-serif;
@@ -90,6 +101,7 @@ li a:hover {
   margin-top: 0px;
   margin-bottom: 1px;
 }
+
 
 /* NOTE: Start of Animation Section */
 /* NOTE: animation for text expanding */
@@ -319,8 +331,15 @@ position: center;
 
 
 /* END: Bootstrap for column creation */
+/* NOTE: for state graph key */
+.square {
+  height: 30px;
+  width: 30px;
+}
+.insquaretext{
+  color: black;
 
-
+}
 
 
 .overlay {
@@ -388,5 +407,6 @@ position: center;
   /*transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
 }
+
 
 /***** End: Text when hover over images */
