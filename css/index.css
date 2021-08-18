@@ -45,17 +45,19 @@ li a:hover {
 .pittlogo{
   height: 75%;
   width: 100%;
+  display: inline-block;
   padding-left: 30px;
+  padding-top: 20px;
 
 }
 
 /* NOTE: used to control the PHIGHTCOIVD HEADER  */
 .shiftRight{
-  padding-left: 290px;
+  padding-left: 300px;
 }
 
 .textSize{
-  font-size: 25px
+  font-size: 35px;
 
 }
 
