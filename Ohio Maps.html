@@ -57,7 +57,7 @@
   <li><a href="Data.html">Data</a></li>
   <li><a href="Graphs.html">State Graphs</a></li>
   <li><a href="Global Maps.html">UK Graph</a></li>
-  <li><a href="Ohio Maps.html">Ohio Map</a></li>
+  <li><a href="Ohio Maps.html">Ohio School Data</a></li>
 
 </ul>
           </div>
@@ -69,21 +69,17 @@
 <body>
 
   <div style="text-align: center;">
-     <h1 style=" font-family: 'Gotham', sans-serif; font-size: 36px; font-weight: 225"> Ohio County Map </h1>
+     <h1 style=" font-family: 'Gotham', sans-serif; font-size: 36px; font-weight: 225"> Ohio County Maps </h1>
      <br/>
-     <p> All graphs are interactive! <br/> We are featuring two Ohio County Maps below, one is color coded by county population and the other is by cumulative deaths <br>(Note Default Map is by cumulative deaths)</br> </p>
+     <p> All graphs are interactive! <br/> We are featuring three Ohio County Maps below, the first graph displays deaths through out the counties followed by the percentages of teaching on premises <br>and third showing the population density of the counties <br>(Note Default Map is by cumulative deaths)</br> </p>
      <hr/>
  </div>
 
- <div class= "container">
    <div class= "row">
-    <div class= "col-sm-12">
-
-
     <form name="change">
 
      <!-- <div class="custom-select"> -->
-      <label for="select-choice1" class="label select-1" style="position:center; text-align: center" ><span class="selection-choice" style="text-align:center">Choose Ohio graph option</span> </label>
+      <!-- <label for="select-choice1" class="label select-1" style="position:center; text-align: center" ><span class="selection-choice" style="text-align:center">Choose Ohio graph option</span> </label>
 
 
       <select id="select-choice1" class="select" ONCHANGE="document.getElementById('youriframe').src = this.options[this.selectedIndex].value">
@@ -92,16 +88,23 @@
           <option value = "ohio-school-data-maps\ohio_map_by_pop.html" >Ohio Map by Population</option>
 
 
-      </select>
+      </select> -->
     <!-- </div> -->
-      <iframe style="padding-top: 25px;" name="iframe" id="youriframe" src="ohio-school-data-maps\ohio_map_by_death.html" frameborder="0" scrolling="yes" width="100%" height="700px" ></iframe>
 
-   </form>
-   <p style= "text-align: center"> The code for these graphs was written by our teammates at Carnegie Mellon University: Dr. Rebecca Nugent, Jiayi (Tracy) Wang, Zongyuan (Ben) Yuan, Xinyu (Melody) Ma and Qingkai (Alvin) Pan </p>
 
-  </div>
+
+
+      <iframe style="align: left; padding-left: 20px" name="iframe" id="youriframe" src="ohio-school-data-maps\ohio_map_by_death.html" frameborder="0" scrolling="yes" width="500px" height="450px" ></iframe>
+      <iframe style="align: center; " name="iframe" id="youriframe" src="ohio-school-data-maps\ohio_map_by_in_person_teaching.html" frameborder="0" scrolling="yes" width="500px" height="450px" ></iframe>
+      <iframe style="align right;" name="iframe" id="youriframe" src="ohio-school-data-maps\ohio_map_by_pop.html" frameborder="0" scrolling="yes" width="500px" height="450px" ></iframe>
+
+
+
+
+
  </div>
-</div>
+ <p style= "text-align: center"> The code for these graphs was written by our teammates at Carnegie Mellon University: Dr. Rebecca Nugent, Jiayi (Tracy) Wang, Zongyuan (Ben) Yuan, Xinyu (Melody) Ma and Qingkai (Alvin) Pan </p>
+
 
  <!-- END: 3rd clickable dropdown button-->
 
