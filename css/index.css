@@ -1,18 +1,65 @@
 html {
   color: Black;
   font-family: 'Gotham', sans-serif;
+
+);
+
 }
 
-header{
 
-    overflow: hidden;
-    background: #FFF;
-    color: #ffffff;
-  /* font:400 .9em/1.9 'Open Sans', Calibri, Helvetica, Arial, sans-serif; */
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #828282;
+
 }
 
-/* Start: Use bootstrap for header conatiner, rows and columns; */
+li {
+  float: left;
+}
 
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+
+}
+
+li a:hover {
+  background-color: #f8f8ff;
+  text-decoration: none;
+  color: black;
+}
+
+/* NOTE: Nav menu changes */
+.menuNav{
+  padding-left: 10px;
+  padding-top: 15px;
+}
+/* NOTE: messes with the pitt logo  */
+.pittlogo{
+  height: 75%;
+  width: 100%;
+  display: inline-block;
+  padding-left: 30px;
+  padding-top: 20px;
+
+}
+
+/* NOTE: used to control the PHIGHTCOIVD HEADER  */
+.shiftRight{
+  padding-left: 300px;
+}
+
+.textSize{
+  font-size: 35px;
+
+}
 
 .col-sm-2 {
   position: relative;
@@ -37,6 +84,17 @@ header{
   text-align: center;
 }
 
+.col-sm-7 {
+  width: 100%;
+}
+.col-lg-12{
+  position: center;
+  width: 100%;
+  height: 120%;
+  padding-top: 70px;
+
+}
+
 .text1 {
   color: #000;
   font-family: 'Gotham', sans-serif;
@@ -45,6 +103,7 @@ header{
   margin-top: 0px;
   margin-bottom: 1px;
 }
+
 
 /* NOTE: Start of Animation Section */
 /* NOTE: animation for text expanding */
@@ -155,6 +214,19 @@ header{
           margin-top: 20px;
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.body2 {
+  background: #272727;
+  font-family: "Montserrat", sans-serif;
+}
+
 /* NOTE: End of animation section */
 /****START: HEADER STYLING***/
 /*************************/
@@ -204,46 +276,7 @@ header{
 /***************************/
 /* Styling Navigation Menu */
 /***************************/
-#menu{
-    float: right;
-    width: 90%;
-    height: 100%;
-    margin: none;
-}
 
-#menu ul{
-    text-align: center;
-    float: right;
-    margin: none;
-    background: #FFF;
-}
-
-#menu li{
-    display: inline-block;
-    padding: none;
-    margin: none;
-}
-
-#menu li a, #menu li span{
-    display: inline-block;
-    padding: 0em 1.0em;
-    text-decoration: none;
-    font-weight: 500;
-    text-transform: uppercase;
-    line-height: 60px;
-}
-
-#menu li a{
-
-    color: #000;
-}
-
-#menu li:hover a, #menu li span{
-
-    text-decoration: underline;
-    color: #f59052;
-
-}
 
 /************** END of header styling */
 
@@ -300,7 +333,15 @@ position: center;
 
 
 /* END: Bootstrap for column creation */
+/* NOTE: for state graph key */
+.square {
+  height: 30px;
+  width: 30px;
+}
+.insquaretext{
+  color: black;
 
+}
 
 
 .overlay {
@@ -348,7 +389,7 @@ position: center;
 }
 
 .text {
-  color: #000;
+  color: white;
   font-size: 17px;
   position: relative;
   top: 50%;
@@ -368,5 +409,6 @@ position: center;
   /*transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
 }
+
 
 /***** End: Text when hover over images */

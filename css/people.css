@@ -12,12 +12,73 @@ header{
   /* font:400 .9em/1.9 'Open Sans', Calibri, Helvetica, Arial, sans-serif; */
 }
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #828282;
+
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+
+}
+
+li a:hover {
+  background-color: #f8f8ff;
+  text-decoration: none;
+  color: black;
+}
+
+/* NOTE: Nav menu changes */
+.menuNav{
+  padding-left: 10px;
+  padding-top: 15px;
+}
+/* NOTE: messes with the pitt logo  */
+.pittlogo{
+  height: 97%;
+  width: 97%;
+  display: inline-block;
+  padding-left: 30px;
+  padding-top: 10px;
+
+}
+
+/* NOTE: used to control the PHIGHTCOIVD HEADER  */
+.shiftRight{
+  padding-left: 300px;
+}
+
+.textSize{
+  font-size: 35px;
+
+}
+
+
 .col-sm-2 {
   position: relative;
   width: 100%;
   padding: 1em;
 }
 
+.col-sm-3{
+  position: relative;
+  width: 100%
+  padding: .5em;
+
+
+}
 
 .col-sm-4 {
   position: center;
@@ -48,6 +109,26 @@ header{
   margin-bottom: 1px;
 }
 
+.center {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+
+/* NOTE: margins for the title "past members" */
+.topmargin{
+  margin-top: 150px;
+}
+.topmargin2{
+  margin-top: 100px;
+  padding-top: 25px;
+}
+
+.dodgerbluebackground{
+  background-color: rgb(30, 144, 255);
+
+}
+}
 /* NOTE: ANIMATION SECTION */
   /* NOTE: animation for text expanding */
 @-webkit-keyframes tracking-in-expand {
@@ -80,16 +161,19 @@ header{
 	-webkit-animation: tracking-in-expand 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) 0.7s both;
 	        animation: tracking-in-expand 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) 0.7s both;
 }
-/* NOTE: Animation for undergrads  */
+
+/* NOTE: expands text like tracking in expand */
+/* NOTE: Animation for undergrads*/
 .tracking-in-expand-delay{
 	-webkit-animation: tracking-in-expand 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) 2.5s both;
 	        animation: tracking-in-expand 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) 2.5s both;
 
 }
-/* NOTE: Animation for High Schoolers */
+
+/* NOTE: Animation for Past members */
 .tracking-in-expand-delay-long{
-	-webkit-animation: tracking-in-expand 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) 5.0s both;
-	        animation: tracking-in-expand 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) 5.0s both;
+	-webkit-animation: tracking-in-expand 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) 7.0s both;
+	        animation: tracking-in-expand 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) 7.0s both;
 
 }
 
@@ -110,114 +194,50 @@ header{
     opacity: 1;
   }
 }
+
+/* NOTE: 1st trio of pics */
 .fade-in {
 	-webkit-animation: fade-in 2s cubic-bezier(0.785, 0.135, 0.150, 0.860) 1.5s both;
 	        animation: fade-in 2s cubic-bezier(0.785, 0.135, 0.150, 0.860) 1.5s both;
 }
 
 
-/* NOTE: 1st set of undergrads */
+/* NOTE: 2nd trio of pics */
 .fadetwo{
   -webkit-animation: fade-in 2s cubic-bezier(0.785, 0.135, 0.150, 0.860) 3.5s both;
 	        animation: fade-in 2s cubic-bezier(0.785, 0.135, 0.150, 0.860) 3.5s both;
 
 }
-/* NOTE: 2nd set of undergrads */
+/* NOTE: 3rd trio of pics */
 .fadethree{
-  -webkit-animation: fade-in 2s cubic-bezier(0.785, 0.135, 0.150, 0.860) 3.8s both;
-	        animation: fade-in 2s cubic-bezier(0.785, 0.135, 0.150, 0.860) 3.8s both;
+  -webkit-animation: fade-in 2s cubic-bezier(0.785, 0.135, 0.150, 0.860) 4.0s both;
+	        animation: fade-in 2s cubic-bezier(0.785, 0.135, 0.150, 0.860) 4.0s both;
 }
+/* NOTE: 4th Trio of Pics */
+.fadefour{
+  -webkit-animation: fade-in 2s cubic-bezier(0.785, 0.135, 0.150, 0.860) 4.5s both;
+	        animation: fade-in 2s cubic-bezier(0.785, 0.135, 0.150, 0.860) 4.5s both;
+}
+
+/* NOTE: 5th Trio of Pics */
+.fadefive{
+  -webkit-animation: fade-in 2s cubic-bezier(0.785, 0.135, 0.150, 0.860) 5.2s both;
+	        animation: fade-in 2s cubic-bezier(0.785, 0.135, 0.150, 0.860) 5.2s both;
+}
+
+/* NOTE: For past members header */
+.fadesix{
+  -webkit-animation: fade-in 2s cubic-bezier(0.785, 0.135, 0.150, 0.860) 7.5s both;
+	        animation: fade-in 2s cubic-bezier(0.785, 0.135, 0.150, 0.860) 7.5s both;
+}
+
+.fadeseven{
+  -webkit-animation: fade-in 2s cubic-bezier(0.785, 0.135, 0.150, 0.860) 8.0s both;
+	        animation: fade-in 2s cubic-bezier(0.785, 0.135, 0.150, 0.860) 8.0s both;
+}
+
 
 /* NOTE: end of animation section */
-
-/****START: HEADER STYLING***/
-/*************************/
-/*    Styling  Header    *
-/*************************
-header{
-
-    overflow: hidden;
-    background: #FFF;
-  color: #ffffff;
-  /* font:400 .9em/1.9 'Open Sans', Calibri, Helvetica, Arial, sans-serif; *
-}
-
-#top-header {
-
-    text-align: center;
-    height: 80px;
-    overflow: hidden;
-    background-color: #000
-    font-weight: 500;
-    padding: 20px 10px;
-}
-
-
-/****************/
-/* Styling Logo */
-/****************
-#logo{
-    float: left;
-    padding: none;
-    margin: none;
-    height: 60px;
-    width: 30%;
-}
-
-#logo img{
-    width: 30%;
-    float: left;
-    padding: 10px 0px;
-    /*filter: brightness(1.0) opacity(0.75); */
-
-
-}
-
-/***************************/
-/* Styling Navigation Menu */
-/***************************/
-#menu{
-    float: right;
-    width: 90%;
-    height: 100%;
-    margin: none;
-}
-
-#menu ul{
-    text-align: center;
-    float: right;
-    margin: none;
-    background: #FFF;
-}
-
-#menu li{
-    display: inline-block;
-    padding: none;
-    margin: none;
-}
-
-#menu li a, #menu li span{
-    display: inline-block;
-    padding: 0em 1.5em;
-    text-decoration: none;
-    font-weight: 500;
-    text-transform: uppercase;
-    line-height: 60px;
-}
-
-#menu li a{
-
-    color: #000;
-}
-
-#menu li:hover a, #menu li span{
-
-    text-decoration: underline;
-    color: #f59052;
-
-}
-
-/************** END of header styling */
 
 
 /* BEGINNING OF BODY!! */
@@ -337,6 +357,14 @@ hr {
 .container {
   /*padding: 2px; */
   /*background-color: rgba(83,85,87,.8); */
+}
+
+/* NOTE: dodgerbluebackground div container */
+.backgroundContain{
+  margin: auto;
+  align: center;
+  width: 500px;
+  height: 100px;
 }
 
 .col-sm-1 {

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<header>
+  <link rel="stylesheet" type="text/css" href="css/Ohio Maps.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="C:\Users\arhat\Documents\GitClones\WebsiteBuilding\js\Ohio Maps.js"></script>
+  <title> PHIGHT COVID Home</title>
+
+<div class="row">
+  <div class="col-sm-2">
+      <img src="img/PittLogo.jpeg" alt="Pittlogo" class="pittlogo">
+  </div>
+
+
+
+
+      <div style="text-align: center;" >
+        <div class= "text1" >
+
+
+          <p class="shiftRight, textSize" style="padding-left: 260px; ">
+            <span style='color:#ffd799'>P</span>
+            <span style='color:#ffb078'>H</span>
+            <span style='color:#fc8861'>I</span>
+            <span style='color:#f2615d'>G</span>
+            <span style='color:#d8466c'>H</span>
+            <span style='color:#87377a'>T</span>
+            <span>&nbsp</span>
+            <span style='color:#942c81'>C</span>
+            <span style='color:#721f82'>O</span>
+            <span style='color:#51127c'>V</span>
+            <span style='color:#2d1160'>I</span>
+            <span style='color:#100c2E'>D</span>
+          </p>
+
+
+
+
+          <p class="shiftRight" style=" font-size: 11px; color: #100c2E" > Public Health Interventions aGainst Human-to-Human Transmission (PHIGHT) of COVID-19 </p>
+        </div>
+      </div>
+</div>
+
+
+
+
+      <div class="menuNav" >
+        <nav>
+          <div id="menu">
+            <ul>
+  <li><a class="active" href="index.html">Home</a></li>
+  <li><a href="Graphs.html">State NPI Timeseries</a></li>
+  <li><a href="Global Maps.html">Case Data by Age</a></li>
+  <li><a href="Ohio Maps.html">Ohio School Data</a></li>
+  <li><a href="Maps.html">Maps</a></li>
+  <li><a href="Data.html">Data</a></li>
+  <li><a href="people.html">People</a></li>
+
+</ul>
+          </div>
+        </nav>
+      </div>
+
+</header>
+
+<body>
+
+  <div style="text-align: center;">
+     <h1 style=" font-family: 'Gotham', sans-serif; font-size: 36px; font-weight: 225"> Ohio County Maps </h1>
+     <br/>
+     <p> All graphs are interactive! <br/> We are featuring three Ohio County Maps below, the first graph displays deaths through out the counties followed by the percentages of teaching on premises <br>and third showing the population density of the counties </p>
+     <hr/>
+ </div>
+
+   <div class= "row">
+    <form name="change">
+
+     <!-- <div class="custom-select"> -->
+      <!-- <label for="select-choice1" class="label select-1" style="position:center; text-align: center" ><span class="selection-choice" style="text-align:center">Choose Ohio graph option</span> </label>
+
+
+      <select id="select-choice1" class="select" ONCHANGE="document.getElementById('youriframe').src = this.options[this.selectedIndex].value">
+
+          <option value="ohio-school-data-maps\ohio_map_by_death.html" >Ohio Map by Death</option>
+          <option value = "ohio-school-data-maps\ohio_map_by_pop.html" >Ohio Map by Population</option>
+
+
+      </select> -->
+    <!-- </div> -->
+
+
+
+
+      <iframe style="align: left; padding-left: 20px" name="iframe" id="youriframe" src="ohio-school-data-maps\ohio_map_by_death.html" frameborder="0" scrolling="yes" width="500px" height="450px" ></iframe>
+      <iframe style="align: center; " name="iframe" id="youriframe" src="ohio-school-data-maps\ohio_map_by_in_person_teaching.html" frameborder="0" scrolling="yes" width="500px" height="450px" ></iframe>
+      <iframe style="align right;" name="iframe" id="youriframe" src="ohio-school-data-maps\ohio_map_by_pop.html" frameborder="0" scrolling="yes" width="500px" height="450px" ></iframe>
+
+
+
+
+
+ </div>
+ <p style= "text-align: center"> The code for these graphs was written by our teammates at Carnegie Mellon University: Dr. Rebecca Nugent, Jiayi (Tracy) Wang, Zongyuan (Ben) Yuan, Xinyu (Melody) Ma and Qingkai (Alvin) Pan </p>
+
+
+ <!-- END: 3rd clickable dropdown button-->
+
+
+ <br/>
+
+ <div class="container">
+   <div class="row">
+     <div class= "col-sm-12">
+       <div class="text" style= "position:center; text-align: center; color: #000"> <p> Terms of Use: <br/> We are committed to sharing our data for educational use, however, we ask that you attribute our data and keep in mind that the PHIGHT COVID project, website and its contents herein, including all data, mapping, graphing and analysis are copyright 2020 Lakdawala Laboratory, all rights reserved. When linking to the website, attribute it as "PHIGHT COVID by the Lakdawala Lab at the University of Pittsburgh" at the url: <a href= "https://lakdawalalab.com/contact-information/" style= "color:#5da1c9"> https://phightcovid.org/ </a>. </p> <br/> <p> The data set underlying our maps and graphs, provided on the Lakdawala Lab <a href= "https://github.com/Lakdawala-Lab/PHIGHT_COVID_Sources" style= "color:#5da1c9"> GitHub </a> (url: https://github.com/Lakdawala-Lab/PHIGHT_COVID_Sources) <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" ></a> <br /> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" style="color:#5da1c9">Creative Commons Attribution-ShareAlike 4.0 International License</a>. Copyright Lakdawala Laboratory 2020. Attribute the data to "PHIGHT COVID by the Lakdawala Lab at the University of Pittsburgh" and the url: <a href="https://github.com/Lakdawala-Lab/PHIGHT_COVID_Sources" style="color:#5da1c9"> https://github.com/Lakdawala-Lab/PHIGHT_COVID_Sources</a>. </p> <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" />
+       </div>
+     </div>
+   </div>
+ </div>
+ <br/>
+
+
+
+
+</body>
+</html>

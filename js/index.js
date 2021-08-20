@@ -1,35 +1,55 @@
-/*alert("This is an alert I created in index.js!"): */ 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
 
 
+    function showImages(el) {
+        var windowHeight = jQuery( window ).height();
+        $(el).each(function(){
+            var thisPos = $(this).offset().top;
 
-/* START: 3rd clickable dropdown button javascript. Don't actually have to use, there is already javascript in the html ONCHANGE element  */ 
-
-$("select").on("click" , function() {
-  
-  $(this).parent(".custom-select").toggleClass("open");
-  
-});
-
-$(document).mouseup(function (e)
-{
-    var container = $(".custom-select");
-
-    if (container.has(e.target).length === 0)
-    {
-        container.removeClass("open");
+            var topOfWindow = $(window).scrollTop();
+            if (topOfWindow + windowHeight - 200 > thisPos ) {
+                $(this).addClass("fade-in");
+                $(this).addClass('.tracking-in-expand-delay');
+                $(this).addClass('.tracking-in-expand-delay-long');
+                $(this).addClass('.fadetwo');
+                $(this).addClass('.fadethree');
+                $(this).addClass('.fadefour');
+                $(this).addClass('.fadefive');
+                $(this).addClass('.fadesix');
+                $(this).addClass('.fadeseven');
+            }
+        });
     }
-});
+
+    // if the image in the window of browser when the page is loaded, show that image
+    //fade in first 3 pictures
+    $(document).ready(function(){
+            showImages('.fade-in');
+    });
+
+    // if the image in the window of browser when scrolling the page, show that image
+    //show undergrads text
+    $(document).scroll(function() {
+            showImages('.tracking-in-expand-delay');
+    });
+
+    $(document).scroll(function() {
+            showImages('.tracking-in-expand-delay-long');
+    });
+
+    $(document).scroll(function() {
+            showImages('.fadetwo');
+    });
+
+    $(document).scroll(function() {
+            showImages('.fadethree');
+    });
+
+    $(document).scroll(function() {
+            showImages('.fadefour');
+    });
+    $(document).ready(function() {
 
 
-$("select").on("change" , function() {
-  
-  var selection = $(this).find("option:selected").text(),
-      labelFor = $(this).attr("id"),
-      label = $("[for='" + labelFor + "']");
-    
-  label.find(".selection-choice").html(selection);
-    
-});   
-
-
- /* END: 3rd clickable dropdown button javascript  */ 
+</script>
