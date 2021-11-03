@@ -2,7 +2,6 @@ html {
   color: Black;
   font-family: 'Gotham', sans-serif;
 
-);
 
 }
 
@@ -104,6 +103,17 @@ li a:hover {
   margin-bottom: 1px;
 }
 
+.map{
+  width: 50%;
+  height: 50%;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
 
 /* NOTE: Start of Animation Section */
 /* NOTE: animation for text expanding */
