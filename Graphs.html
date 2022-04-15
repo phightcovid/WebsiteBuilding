@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   	<title> PHIGHT COVID Graphs</title>
 
+
     <div class="row">
       <div class="col-sm-2">
           <img src="img/PittLogo.jpeg" alt="Pittlogo" class="pittlogo">
@@ -54,7 +55,7 @@
                   <li><a href="Graphs.html">State NPI Timeseries</a></li>
                   <li><a href="Global Maps.html">Case Data by Age</a></li>
                   <li><a href="Ohio Maps.html">Ohio School Data</a></li>
-                  <li><a href="Maps.html">Archived Maps</a></li>
+                  <li><a href="Maps.html">Maps</a></li>
                   <li><a href="Data.html">Data</a></li>
                   <li><a href="people.html">People</a></li>
                   <li><a href="Publications.html">Publications</a></li>
@@ -86,81 +87,13 @@
 
 
 <!-- START: 3rd clickable dropdown button-->
- <div class= "container">
-   <div class= "row">
-    <div class= "col-sm-12">
 
+<div class="container">
+  <iframe height="1000px" width="100%" scrolling = "auto" frameborder="no" src=" https://athenadai.shinyapps.io/phight-covid-interactive-time-series/"> </iframe>
 
-    <form name="change">
-
-     <!-- <div class="custom-select"> -->
-      <label for="select-choice1" class="label select-1" style="position:center; text-align: center" ><span class="selection-choice" style="text-align:center">Choose a state</span> </label>
-
-
-      <select id="select-choice1" class="select" ONCHANGE="document.getElementById('youriframe').src = this.options[this.selectedIndex].value">
-
-          <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries_upd12102021/alabama_interactive.html">Alabama</option>
-          <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries_upd12102021/alaska_interactive.html">Alaska</option>
-          <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries_upd12102021/arizona_interactive.html">Arizona</option>
-          <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries_upd12102021/arkansas_interactive.html">Arkansas</option>
-          <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries_upd12102021/california_interactive.html">California</option>
-          <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries_upd12102021/colorado_interactive.html">Colorado</option>
-          <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries_upd12102021/connecticut_interactive.html">Connecticut</option>
-          <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries_upd12102021/district of columbia_interactive.html">District of Columbia</option>
-          <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries_upd12102021/delaware_interactive.html">Delaware</option>
-          <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries_upd12102021/florida_interactive.html">Florida</option>
-          <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries_upd12102021/georgia_interactive.html">Georgia</option>
-          <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries_upd12102021/hawaii_interactive.html">Hawaii</option>
-          <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries_upd12102021/idaho_interactive.html">Idaho</option>
-          <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries_upd12102021/illinois_interactive.html">Illinois</option>
-          <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries_upd12102021/indiana_interactive.html">Indiana</option>
-          <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries_upd12102021/iowa_interactive.html">Iowa</option>
-          <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries_upd12102021/kansas_interactive.html">Kansas</option>
-          <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries_upd12102021/kentucky_interactive.html">Kentucky</option>
-          <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries_upd12102021/louisiana_interactive.html">Louisiana</option>
-          <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries_upd12102021/maine_interactive.html">Maine</option>
-          <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries_upd12102021/maryland_interactive.html">Maryland</option>
-          <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries_upd12102021/massachusetts_interactive.html">Massachusetts</option>
-          <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries_upd12102021/michigan_interactive.html">Michigan</option>
-          <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries_upd12102021/minnesota_interactive.html">Minnesota</option>
-          <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries_upd12102021/mississippi_interactive.html">Mississippi</option>
-          <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries_upd12102021/missouri_interactive.html">Missouri</option>
-          <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries_upd12102021/montana_interactive.html">Montana</option>
-          <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries_upd12102021/nebraska_interactive.html">Nebraska</option>
-          <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries_upd12102021/nevada_interactive.html">Nevada</option>
-          <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries_upd12102021/new hampshire_interactive.html">New Hampshire</option>
-          <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries_upd12102021/new jersey_interactive.html">New Jersey</option>
-          <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries_upd12102021/new mexico_interactive.html">New Mexico</option>
-          <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries_upd12102021/new york_interactive.html">New York</option>
-          <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries_upd12102021/north carolina_interactive.html">North Carolina</option>
-          <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries_upd12102021/north dakota_interactive.html">North Dakota</option>
-          <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries_upd12102021/ohio_interactive.html">Ohio</option>
-          <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries_upd12102021/oklahoma_interactive.html">Oklahoma</option>
-          <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries_upd12102021/oregon_interactive.html">Oregon</option>
-          <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries_upd12102021/pennsylvania_interactive.html">Pennsylvania</option>
-          <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries_upd12102021/rhode island_interactive.html">Rhode Island</option>
-          <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries_upd12102021/south carolina_interactive.html">South Carolina</option>
-          <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries_upd12102021/south dakota_interactive.html">South Dakota</option>
-          <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries_upd12102021/tennessee_interactive.html">Tennessee</option>
-          <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries_upd12102021/texas_interactive.html">Texas</option>
-          <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries_upd12102021/utah_interactive.html">Utah</option>
-          <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries_upd12102021/vermont_interactive.html">Vermont</option>
-          <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries_upd12102021/virginia_interactive.html">Virginia</option>
-          <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries_upd12102021/washington_interactive.html">Washington</option>
-          <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries_upd12102021/west virginia_interactive.html">West Virginia</option>
-          <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries_upd12102021/wisconsin_interactive.html">Wisconsin</option>
-          <option value="https://phightcovid.org/PHIGHTCOVID_state_tmseries_upd12102021/wyoming_interactive.html">Wyoming</option>
-
-      </select>
-    <!-- </div> -->
-      <iframe name="iframe" id="youriframe" src="https://phightcovid.org/PHIGHTCOVID_state_tmseries_upd12102021/alabama_interactive.html" frameborder="0" scrolling="yes" width="100%" height="700px" ></iframe>
-
-   </form>
-
-  </div>
- </div>
 </div>
+
 
 </body>
 
- <html/>
+ </html>
