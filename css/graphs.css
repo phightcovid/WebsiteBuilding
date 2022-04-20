@@ -292,9 +292,15 @@ position: center;
   &:after {
    border-color: darken(#21cf8f, 10);
 
-
+}
   }
 
+.scaled {
+  transform: scale(1.0);
+  position: relative;
+  padding-top: 100px;
+  padding-left:  30px;
+}
 /* END: 3rd clickable dropdown button CSS */
 
 /* START: Bootstrap for column creation *
