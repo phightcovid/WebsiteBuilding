@@ -1,5 +1,5 @@
 server <- function(input, output) {
-    addResourcePath("myhtmlfiles", '/Users/jimmylederman/Desktop/phight_covid/mask_narrative/')
+    addResourcePath("myhtmlfiles", '/Users/mjs379/Documents/GitHub/WebsiteBuilding/mask_narrative/')
   
   getPage1 <- function() {
     return(tags$iframe(src = "myhtmlfiles/fig1.html", 
